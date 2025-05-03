@@ -24,7 +24,7 @@ Libraries: Torchvision, Pillow, NumPy
 
 | After Preprocessing | GradCAM Heatmap |
 |---------------------|-----------------|
-| ![After Preprocessing](after_preprocessing.png) | ![GradCAM Heatmap](heatmap.png) |
+| ![After Preprocessing](assets/after_preprocessing.png) | ![GradCAM Heatmap](assets/heatmap.png) |
 Upload a fundus image ➔ Get real-time AI predictions!
 
 📚 Notebook and Model Training The full model training process, including:
