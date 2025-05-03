@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glaucoma Detection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #1f1f1f;
+            padding: 40px 60px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+        input[type="file"] {
+            margin: 20px 0;
+            font-size: 16px;
+            color: #f0f0f0;
+        }
+        input[type="submit"] {
+            padding: 10px 24px;
+            font-size: 16px;
+            background-color: #00bcd4;
+            color: #121212;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #00acc1;
+        }
+        .note {
+            font-size: 14px;
+            color: #cccccc;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>👁️ Glaucoma Detection Tool</h2>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required><br>
+            <input type="submit" value="Upload and Diagnose">
+        </form>
+        <p class="note">Upload a retina fundus image to detect signs of glaucoma.</p>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Glaucoma Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Glaucoma Detection</h1>
+    <div class="card">
+      <p>Select an image to detect Glaucoma:</p>
+      <form action="/detect" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" class="file-input">
+        <br/><br/>
+        <button type="submit" class="btn">Detect</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+
